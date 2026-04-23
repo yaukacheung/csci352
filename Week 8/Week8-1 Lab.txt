@@ -1,0 +1,5 @@
+1. http.request.method=="GET" && http.host=="www.willselfdestruct.com"
+2. data-text-lines contains "secure anonymous E-mail"
+3. (ip.src==192.168.15.4) && (ip.dst==69.25.94.22) && http.request.method=="POST"
+4. eth.addr==00:17:f2:e2:c0:ce
+5. eth.src==00:17:f2:e2:c0:ce && http.cookie contains "@"
