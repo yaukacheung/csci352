@@ -1,0 +1,21 @@
+ls -R | grep -Eio "\.[a-zA-Z]{3,4}\b" | sort | uniq -c | sort -nr
+
+ls -R
+Lists files and directories.
+-R means recursive
+
+| pipe
+
+Flags:
+-E use extended regex
+-i case-insensitive
+-o only print the matched part
+
+-c
+shows how many times each extension appeared
+
+-n
+numeric sort
+
+-r
+reverse (largest first)
