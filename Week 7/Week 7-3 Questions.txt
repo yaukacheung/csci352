@@ -1,0 +1,22 @@
+QUESTIONS:
+
+1. Match all email addresses.
+2. Match all dates in format YYYY-MM-DD.
+3. Match all dates in format MM/DD/YYYY.
+4. Extract all IP addresses.
+5. Match all phone numbers.
+6. Extract all currency amounts ($ or €).
+7. Match all project codes like PX-2024-A.
+8. Extract version numbers like v2.3.4.
+9. Match all IDs (5-digit numbers only).
+10. Match all temperature values (including negative and decimals).
+11. Extract all usernames from email addresses (before @).
+12. Match domain names only (after @).
+13. Match words containing underscores.
+14. Match words containing hyphens.
+15. Extract all capitalized full names (First Last).
+16. Match all lines that start with a bullet (-).
+17. Validate IPv4 address pattern strictly.
+18. Match phone numbers that include country code.
+19. Extract all numeric values (integers and decimals).
+12. Match all alphanumeric codes written fully in uppercase.

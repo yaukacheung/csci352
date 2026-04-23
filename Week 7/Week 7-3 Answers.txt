@@ -1,0 +1,62 @@
+Answers:
+
+1. Match all email addresses.
+[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}
+
+2. Match all dates in format YYYY-MM-DD.
+\d{4}-\d{2}-\d{2}
+
+3. Match all dates in format MM/DD/YYYY.
+\d{2}/\d{2}/\d{4}
+
+4. Extract all IP addresses.
+\d{1,3}(\.\d{1,3}){3}
+
+5. Match all phone numbers.
+\d{1,3}(\.\d{1,3}){3}
+
+6. Extract all currency amounts ($ or €).
+[$€]\d{1,3}(,\d{3})*(\.\d+)?
+
+7. Match all project codes like PX-2024-A.
+PX-\d{4}-[A-Z]
+
+8. Extract version numbers like v2.3.4.
+v\d+\.\d+\.\d+
+
+9. Match all IDs (5-digit numbers only).
+\b\d{5}\b
+
+10. Match all temperature values (including negative and decimals).
+-?\d+(\.\d+)?°C
+
+11. Extract all usernames from email addresses (before @).
+([A-Za-z0-9._%+-]+)(?=@)
+
+12. Match domain names only (after @).
+(?<=@)[A-Za-z0-9.-]+\.[A-Za-z]{2,}
+
+13. Match words containing underscores.
+\b\w*_\w*\b
+
+14. Match words containing hyphens.
+\b\w+-\w+(-\w+)*\b
+
+15. Extract all capitalized full names (First Last).
+\b[A-Z][a-z]+\s[A-Z][a-z]+\b
+
+16. Match all lines that start with a bullet (-).
+^-.*$
+
+17. Validate IPv4 address pattern strictly.
+\b((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)\.){3}
+(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)\b
+
+18. Match phone numbers that include country code.
+\+\d{1,2}-\d{3}-\d{3}-\d{4}
+
+19. Extract all numeric values (integers and decimals).
+-?\d+(\.\d+)?
+
+20. Match all alphanumeric codes written fully in uppercase.
+\b[A-Z0-9_-]{2,}\b
